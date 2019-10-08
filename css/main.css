@@ -1,0 +1,67 @@
+body {
+    background-color: #0B0C10; 
+}
+
+.main {
+    box-shadow: 5px 10px 20px #45A29E;
+    margin-top: 10px;
+}
+
+#panel {
+    border-bottom: 2px solid #45A29E;
+}
+
+canvas {
+    width: 100%; 
+
+    background-color: #0B0C10;
+}
+
+
+.text-blue {
+    color: #45A29E;
+}
+
+#score {
+    color: #45A29E; 
+    font-size: 18px;
+    padding: 15px; 
+    text-align: right; 
+    font-weight: 500; 
+}
+
+#space {
+    position: relative; 
+    padding: 0px; 
+}
+
+#z_cont {
+    z-index: 20;
+    padding: 0px; 
+    margin: 0px; 
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+}
+
+#play {
+    font-size: 30px;
+    margin-top:100%;
+    padding: 5px 25px;
+}
+
+
+nav button {
+    color:#45A29E;
+}
+
+
+footer .fa { 
+    text-align: center;
+    font-size: 30px;
+    padding: 7px;
+}
+
+.navbar-brand {
+    color: #45A29E !important;
+}
