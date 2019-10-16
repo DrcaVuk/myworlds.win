@@ -22,7 +22,18 @@
         </nav>
         </div>
         <div class="col-6">
-          <div id="score"></div>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-3 offset-0 offset-sm-0 offset-md-5">
+                    <div class="score">
+                      <span id="healt"></span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                    <div class="score">
+                      <span id="score"></span>
+                    </div>
+                </div>
+            </div>
         </div> 
         </div> 
         </div>

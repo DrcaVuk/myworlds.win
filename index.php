@@ -18,8 +18,11 @@
               <div class="row">
                 <div class="col-4 col-md-2 offset-4 offset-5">  
                   <button type="button" onclick="playGame()" id="play" class="btn btn-outline-info"> <i class="fa fa-play-circle"></i> Play </button>
-                </div>              
-              </div>  
+                </div>                 
+              </div> 
+                <div class="container">
+                  <h2 class="text-info m-3" id="game_over">GAME OVER</h2>
+                </div>       
             </div>
         </div>
         
