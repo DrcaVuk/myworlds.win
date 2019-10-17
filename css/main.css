@@ -55,7 +55,7 @@ canvas {
     margin-top: 7%;
     height: 90%;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #play {
@@ -84,3 +84,49 @@ footer .fa {
     margin-top: 30%;
     border-radius: 5%;
 }
+
+#z_cont input {
+    color: #0B0C10;
+    background-color: #C5C6C7;
+} 
+
+#z_cont textarea {
+    color: #0B0C10;
+    background-color: #C5C6C7;
+}
+
+.border-danger {
+    color: #0B0C10;
+    border: 2px solid red; 
+}
+
+.border-success {
+    border: 2px solid #45A29E; 
+}
+
+#result { 
+    color: #fff; 
+    border-radius: 10px; 
+    margin-top: 20px; 
+    padding: 5px 15px;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    }
+
+    @media screen and (width: 576px) {
+        #main {
+            margin: 0px;
+            box-shadow: none; 
+        }
+        
+        #z-cont {
+            margin: 0px;
+        }
+
+
+    }
+    
