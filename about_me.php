@@ -11,21 +11,25 @@
   <body>
     <div class="container mt-5 p-0 main" id="main">
     
-    <?php include('inc/header.php'); ?>
+        <?php include('inc/header.php'); ?>
        
         <div class="container-fluid position-relative text-blue" id="space">
            <div id="z_cont">
-              <div class="container m-3">
-             
+              <div class="container">
+
               </div>
-              <div class="row mt-5">
-                <div class="col-3 p-1 offset-1 mt-5">
+              <div class="row mt-4">
+                <div class="col-12 col-sm-12 col-md-3 p-0 offset-0 offset-sm-0 offset-md-1">
                   <img src="img/about_me.png" class="img-fluid">
                 </div>
-                <div class="col-8 text-center">
-                <h3 class="text-center">About Me</h3>
-                    <p class="m-5">I'm a software developer with a passion for web design. 
-                    I enjoy developing simple, clean and slick websites that provide real value to the end user.</p>
+                <div class="col-12 col-sm-12 col-md-7 text-center">
+                     <h3 class="text-center m-2">About Me</h3>
+                     <p class="p-4">Hello, my name is Vuk Drca and I work as a freelancer in Web development. I work as both a front-end and back-end developer, but I especially like working with JavaScript.
+                        I enjoy creating simple, clean and functional websites which provide an enjoyable experience to the end user. 
+                        I have a wide range of skills which can be easily applied to all kinds of projects.</p> 
+                     <h3 class="text-center m-2">How can I help you?</h3>
+                     <p class="p-4">I can help you create a website from scratch with all the functions you need. I can also help you to upgrade your existing site and solve any problems you have with it. 
+                        All the websites I create perform equally well on the phone, tablet and computer. If your webpage is not responsive, I can help you solve that problem, too. </p>
                 </div>             
               </div>  
             </div>

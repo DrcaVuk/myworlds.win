@@ -51,19 +51,17 @@ canvas {
 
 #z_cont {
     z-index: 20;
-    padding: 0px; 
-    margin: 0px; 
     position: absolute; 
-    height: 100%;
+    margin-top: 7%;
+    height: 90%;
     width: 100%;
+    overflow: hidden;
 }
 
 #play {
     font-size: 30px;
     margin-top:100%;
     padding: 5px 25px;
-}
-
 }
 
 
@@ -80,4 +78,9 @@ footer .fa {
 
 .navbar-brand {
     color: #45A29E !important;
+}
+
+.img-fluid {
+    margin-top: 30%;
+    border-radius: 5%;
 }
