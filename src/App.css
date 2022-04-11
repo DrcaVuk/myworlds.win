@@ -1,38 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+
+:root {
+  --primary-cololor: #4acaff;
+  --secondary-color: linear-gradient(135deg,#fd7d57,#f55d59);
+  --background-color: rgba(255,255,255,0.8);
+  --font-color: rgba(255,255,255,0.8);
+  --font-hover-color: #fff;
+  --hover-color: #fd7d57;
+}
+
+* {
+  font-family: 'Armata', sans-serif;
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: block;
   min-height: 100vh;
+  background-color: #000;
+  background-image: url("http://localhost/image/2474215.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+}
+
+.content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  margin: 5rem auto;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: var(--font-color)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  background: linear-gradient(135deg,#4acaff,#21d6bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  position: relative;
+  margin: 2rem 0;
+}
+
+h2 {
+  text-align: center;
+  color: var(--font-color)
+}
+
+p {
+  color: var(--font-color); 
+  text-align: center;
+  padding:1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 0;
+}
+
+header .container a  {
+  margin: 0 10px;
+}
+
+.row { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.col {
+  width: 50%;
+  padding: 1rem;
+}
+
+.col img { 
+  max-width: fit-content;
+  border-radius: 100%;
+}
+
+footer {
+  display: block;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer svg {
+  width: 2.2rem; 
+  height: auto;
+  margin: 0 10px;
+  fill: #4acaff
+}
+
+footer p {
+  color: #555555;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width:900px) {
+  .row {
+    flex-direction: column !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .col {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .col img {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
   }
 }

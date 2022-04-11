@@ -1,0 +1,25 @@
+.button {
+    border: 1px solid #fd7d57;
+    background-color: #fd7d57;
+    transition: 0.15s ease-in;
+}
+
+.button:hover {
+    background-color: #f55d59;
+}
+
+@media screen and (max-width:900px) {
+   .button {
+       width: 100%;
+       height: 40px;
+       font-size: 1.5rem;
+   }
+}
+
+@media screen and (min-width:901px) {
+    .button{
+        width: 150px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}

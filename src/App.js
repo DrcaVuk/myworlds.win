@@ -1,27 +1,29 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
-import Home from "./Pages/Home";
-import Contact from "./Pages/Contact";
-import Portfolio from "./Pages/Portfolio";
-import Service from "./Pages/Service";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
-import './App.css';
+import Navbar from "./shared/components/navbar/Navbar";
+import Footer from "./shared/components/footer/Footer";
 
-const App = () => {
+import MyWorlds from "./myworlds/pages/MyWorlds";
+import AboutMe from "./aboutme/pages/AboutMe";
+import Game from "./game/pages/Game";
+import Contact from "./contact/pages/Contact";
+
+import "./App.css";
+
+function App() {
   return (
     <div className="App">
-      <Router>
-      <Navbar />
-        <Switch>
-          <Route exact path="/"><Home /></Route>
-          <Route path="/contact"><Contact /></Route>
-          <Route path="/portfolio"><Portfolio /></Route>
-          <Route path="/service"><Service /></Route>
-        </Switch>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<MyWorlds />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
