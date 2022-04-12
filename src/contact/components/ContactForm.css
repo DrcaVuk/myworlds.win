@@ -3,7 +3,6 @@ form {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 1rem 2rem;
 }
 
 form .form-control {
@@ -14,9 +13,15 @@ form .form-control {
 
 form .form-control input {
     width: 100%;
-    height: 2rem;
+    height: 40px;
     font-size: 1rem;
     margin-bottom: 1rem;
+    border-radius: 0;
+    color: rgba(0,0,0,1);
+}
+
+input:focus {
+    outline: none  !important;
 }
 
 form .form-control textarea {
@@ -24,12 +29,15 @@ form .form-control textarea {
     height: auto;
     resize: vertical;
     margin-bottom: 2rem;
+    color: rgba(0,0,0,1);
+    font-size: 1rem;
 }
 
 
 @media screen and (max-width:900px) {
     form {
         margin-bottom: 100px;
+        padding: 1rem 0;
     }
     
     form .form-control {
@@ -38,6 +46,10 @@ form .form-control textarea {
 }
 
 @media screen and (min-width: 901px) {
+    form {
+        padding: 1rem 2rem;
+    }
+
     form .form-control {
         width: 400px;
         display: flex;
