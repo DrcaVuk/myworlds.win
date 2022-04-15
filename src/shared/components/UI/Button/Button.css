@@ -1,11 +1,12 @@
 .button {
-    border: 1px solid #fd7d57;
-    background-color: #fd7d57;
+    border: 1px solid #f55d59;
+    background-color: #f55d59;
     transition: 0.15s ease-in;
+    cursor: pointer;
 }
 
 .button:hover {
-    background-color: #f55d59;
+    background-color: #fd7d57;
 }
 
 @media screen and (max-width:900px) {

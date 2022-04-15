@@ -14,7 +14,7 @@ const Navbar = (props) => {
 
   return (
     <nav>
-      <div className="container">
+      <div className="container" onClick={handlerActive}>
         <div className="logo">MYWORLDS.WIN</div>
         <div className={active ?"navbar active":"navbar" }>
           <NavLink to="/">MY WORLDS</NavLink>

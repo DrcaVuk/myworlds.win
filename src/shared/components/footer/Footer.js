@@ -1,12 +1,15 @@
 import React from "react";
-
-import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
+import CV from "../../others/CV-Vuk-Drča.pdf"
+import { AiOutlineGithub, AiFillLinkedin, AiOutlineCloudDownload } from "react-icons/ai";
 
 const Footer = (props) => {
   return (
     <footer>
       <div className="container">
         <div>
+          <a href={CV} target="_blank">
+            <AiOutlineCloudDownload />
+          </a>
           <a href="https://github.com/DrcaVuk" target="_blank">
             <AiOutlineGithub />
           </a>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import image from "../../shared/images/contact img.png"
 import ContactForm from "../components/ContactForm";
 
 const Contact = (props) => {
@@ -11,7 +11,9 @@ const Contact = (props) => {
           <div className="col">
             <ContactForm />
           </div>
-          <div className="col"></div>
+          <div className="col">
+              <img src={image} alt="space ship img" />
+          </div>
         </div>
       </div>
     </div>

@@ -2,7 +2,11 @@ import React from "react";
 
 const MyWorlds = props => {
     return(
-        <div>My Worlds</div>
+        <div className="container">
+            <div className="content">
+            My Worlds
+            </div>
+        </div>
     )
 }
 
